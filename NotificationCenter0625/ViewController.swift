@@ -15,17 +15,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //TODO: Observing Notification
         let center = NotificationCenter.default
         let name = Notification.Name("Update Data")
-        center.addObserver(self, selector: #selector(self.updateCounter(notifigation:)), name: name, object: nil)
+        center.addObserver(self, selector: #selector(self.updateCounter(notification:)), name: name, object: nil)
     }
 
-    @objc func updateCounter(notifigation: Notification) {
+    @objc func updateCounter(notification: Notification) {
         ///Observers are sometimes executed from a different thread ( asynchronously ), so we have to access the main thread to avoid conflict.
         let main = OperationQueue.main
         main.addOperation {
-            let current = AppData.names
-            self.counterLbl.text = String(current.count)
+            
+            if let info = notification.userInfo {
+                ///The values from the dictionary are returned as values of type Any,
+                ///so we have to cast them to the right type.
+                let type = info["type"] as? String
+                if type == "New Name" {
+                    let current = AppData.names
+                    self.counterLbl.text = String(current.count)
+                }
+            }
         }
     }
 
