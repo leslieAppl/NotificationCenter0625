@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //TODO: Observing Notification
+        //TODO: Add Observer to the Notification Center
         let center = NotificationCenter.default
         let name = Notification.Name("Update Data")
         center.addObserver(self, selector: #selector(self.updateCounter(notification:)), name: name, object: nil)
@@ -35,6 +35,13 @@ class ViewController: UIViewController {
                     self.counterLbl.text = String(current.count)
                 }
             }
+            
+            //TODO: Remove Observer from the Notification Center
+            //So the label is only updated once
+            let center = NotificationCenter.default
+            let name = Notification.Name("Update Data")
+            center.removeObserver(self, name: name, object: nil)
+
         }
     }
 
