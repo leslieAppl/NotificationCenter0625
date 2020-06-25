@@ -10,10 +10,12 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var name: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
 
@@ -28,6 +30,12 @@ class SecondViewController: UIViewController {
     */
 
     @IBAction func saveBtnPressed(_ sender: UIButton) {
+        if let value = name.text {
+            if value != "" {            
+                AppData.addNewName(newName: value)
+            }
+        }
+        name.text = ""
         
         navigationController?.popViewController(animated: true)
     }
