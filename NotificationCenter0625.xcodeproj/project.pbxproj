@@ -15,6 +15,8 @@
 		CEB55CBB24A4841E00364154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB55CB924A4841E00364154 /* LaunchScreen.storyboard */; };
 		CEB55CC324A4878700364154 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB55CC224A4878700364154 /* SecondViewController.swift */; };
 		CEB55CC524A48C2D00364154 /* ApplicationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB55CC424A48C2D00364154 /* ApplicationData.swift */; };
+		CEB55CC724A5EC0100364154 /* KeyboardNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB55CC624A5EC0100364154 /* KeyboardNotificationViewController.swift */; };
+		CEB55CC924A5F8A700364154 /* KeyboardNotificationViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB55CC824A5F8A700364154 /* KeyboardNotificationViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		CEB55CBC24A4841E00364154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB55CC224A4878700364154 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		CEB55CC424A48C2D00364154 /* ApplicationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationData.swift; sourceTree = "<group>"; };
+		CEB55CC624A5EC0100364154 /* KeyboardNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotificationViewController.swift; sourceTree = "<group>"; };
+		CEB55CC824A5F8A700364154 /* KeyboardNotificationViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotificationViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				CEB55CC424A48C2D00364154 /* ApplicationData.swift */,
 				CEB55CB224A4841B00364154 /* ViewController.swift */,
 				CEB55CC224A4878700364154 /* SecondViewController.swift */,
+				CEB55CC624A5EC0100364154 /* KeyboardNotificationViewController.swift */,
+				CEB55CC824A5F8A700364154 /* KeyboardNotificationViewController2.swift */,
 				CEB55CB424A4841B00364154 /* Main.storyboard */,
 				CEB55CB724A4841E00364154 /* Assets.xcassets */,
 				CEB55CB924A4841E00364154 /* LaunchScreen.storyboard */,
@@ -144,10 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB55CC724A5EC0100364154 /* KeyboardNotificationViewController.swift in Sources */,
 				CEB55CC524A48C2D00364154 /* ApplicationData.swift in Sources */,
 				CEB55CC324A4878700364154 /* SecondViewController.swift in Sources */,
 				CEB55CB324A4841B00364154 /* ViewController.swift in Sources */,
 				CEB55CAF24A4841B00364154 /* AppDelegate.swift in Sources */,
+				CEB55CC924A5F8A700364154 /* KeyboardNotificationViewController2.swift in Sources */,
 				CEB55CB124A4841B00364154 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

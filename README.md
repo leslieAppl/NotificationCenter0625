@@ -9,3 +9,5 @@
 - Reading the value received by the observer
 
 ## Remove Observer from the Notification Center
+
+## UIWindow class - keyboard Notifications
