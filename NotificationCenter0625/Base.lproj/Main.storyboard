@@ -201,8 +201,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
-                                    <action selector="saveBtnPressed:" destination="WQ5-IN-EE1" eventType="touchUpInside" id="1oN-CL-qcN"/>
-                                    <action selector="saveBtnPressed:" destination="qvH-0o-B20" eventType="touchUpInside" id="pyu-5V-hL7"/>
+                                    <action selector="saveBtnPressed:" destination="9e6-SQ-Rnf" eventType="touchUpInside" id="aoj-p4-vBP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did not notify keyboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFP-tT-zco">
@@ -231,7 +230,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1LJ-ZN-MXj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="qvH-0o-B20" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1729" y="1489"/>
         </scene>
