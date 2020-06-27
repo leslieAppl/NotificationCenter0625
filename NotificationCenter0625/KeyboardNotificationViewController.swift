@@ -22,6 +22,12 @@ class KeyboardNotificationViewController: UIViewController {
         let center = NotificationCenter.default
         center.addObserver(self, selector: #selector(self.openKeyboard(notification:)), name: UIWindow.keyboardWillShowNotification, object: nil)
         center.addObserver(self, selector: #selector(closeKeyboard(notification:)), name: UIWindow.keyboardWillHideNotification, object: nil)
+        
+        ///Responding to font size changes from the Settings app
+        center.addObserver(self, selector: #selector(self.fontChanged(notification:)), name: UIContentSizeCategory.didChangeNotification, object: nil)
+        
+        ///Responding to a Text View notification
+        center.addObserver(self, selector: #selector(reportChange(notification:)), name: UITextView.textDidChangeNotification, object: nil)
     }
     
     @objc func openKeyboard(notification: Notification) {
@@ -35,6 +41,14 @@ class KeyboardNotificationViewController: UIViewController {
     
     @objc func closeKeyboard(notification: Notification) {
         heightBottom.constant = constraintHeight
+    }
+    
+    @objc func fontChanged(notification: Notification) {
+        mainText.font = UIFont.preferredFont(forTextStyle: .body)
+    }
+    
+    @objc func reportChange(notification: Notification) {
+        print("The Text View was modified")
     }
 
     @IBAction func saveBtnPressed(_ sender: UIButton) {

@@ -11,3 +11,9 @@
 ## Remove Observer from the Notification Center
 
 ## UIWindow class - keyboard Notifications
+
+## Responding to font size changes from the Settings app
+- (Settings/Accessibility/Larger Text)
+- Accessibility features help you customize your iPhone for your individual need.
+
+## Responding to a Text View notification
