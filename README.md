@@ -17,3 +17,5 @@
 - Accessibility features help you customize your iPhone for your individual need.
 
 ## Responding to a Text View notification
+
+## Detecting the current orientation

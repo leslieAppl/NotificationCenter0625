@@ -23,10 +23,10 @@ class KeyboardNotificationViewController: UIViewController {
         center.addObserver(self, selector: #selector(self.openKeyboard(notification:)), name: UIWindow.keyboardWillShowNotification, object: nil)
         center.addObserver(self, selector: #selector(closeKeyboard(notification:)), name: UIWindow.keyboardWillHideNotification, object: nil)
         
-        ///Responding to font size changes from the Settings app
+        //TODO: Responding to font size changes from the Settings app
         center.addObserver(self, selector: #selector(self.fontChanged(notification:)), name: UIContentSizeCategory.didChangeNotification, object: nil)
         
-        ///Responding to a Text View notification
+        //TODO: Responding to a Text View notification
         center.addObserver(self, selector: #selector(reportChange(notification:)), name: UITextView.textDidChangeNotification, object: nil)
     }
     
